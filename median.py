@@ -17,4 +17,15 @@ def median(a,b,c):
         return bigger(a,c)
     else:
         return bigger(a,b)
+    
+def test():
+    '''This function will check if all the test case are pass or not'''
+    assert median(1,2,3) == 2
+    assert median(1,2,1) == 1
+    assert median(2,4,1) == 2
+    assert median(1,1,2) == 1
+    assert median(3,7,9) == 7
+    assert median(1,1,1) == 1
+    print('All test cases passed')
+test()
         
